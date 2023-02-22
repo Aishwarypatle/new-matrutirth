@@ -3378,9 +3378,10 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem; }
+  padding: 0.2rem .5rem; }
   .nav-link:hover, .nav-link:focus {
-    text-decoration: none; }
+    text-decoration: none;
+   }
   .nav-link.disabled {
     color: #6c757d;
     pointer-events: none;
@@ -3487,7 +3488,9 @@ input[type="button"].btn-block {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none; }
+  list-style: none; 
+  align-items: center;
+}
   .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0; }
@@ -8049,7 +8052,7 @@ h1, h2, h3, h4, h5,
 .ftco-navbar-light {
   background: #fff !important;
   z-index: 3;
-  padding: 0;
+  padding: 20px;
   -webkit-box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34);
   -moz-box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34);
   box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34); }
@@ -8077,10 +8080,10 @@ h1, h2, h3, h4, h5,
       padding-bottom: 10px; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
     font-size: 11px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
     font-weight: 500;
     color: #4d4d4d;
     text-transform: uppercase;
@@ -8094,7 +8097,7 @@ h1, h2, h3, h4, h5,
       height: 100%;
       bottom: 0;
       left: 0;
-      background-color: #FF9315;
+      
       visibility: hidden;
       -webkit-transform: scaleX(0);
       -ms-transform: scaleX(0);
@@ -8104,10 +8107,11 @@ h1, h2, h3, h4, h5,
       transition: all 0.2s ease-in-out 0s;
       z-index: -1; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #fff; }
+      color: #fff; 
+    background-color: #202020;}
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before {
         visibility: visible;
-        background-color: #FF9315;
+        background-color: #202020;
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
         transform: scaleX(1); }
@@ -8155,7 +8159,9 @@ h1, h2, h3, h4, h5,
         background: #FF9315;
         border-radius: 4px; } }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #fff; }
+    color: #fff;
+  background-color: #202020;
+ }
     .ftco-navbar-light .navbar-nav > .nav-item.active > a:before {
       visibility: visible;
       background-color: #FF9315;
